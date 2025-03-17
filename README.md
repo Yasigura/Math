@@ -12,4 +12,4 @@
 
 
 ## 📥 Скачать miniMathSolver:
-- **📦** → [miniMathSolver.exe](bin/miniMathSolver.exe)
+- **📦** → [miniMathSolver.exe](https://github.com/Yasigura/Math/raw/refs/heads/main/bin/miniMathSolver.exe)
