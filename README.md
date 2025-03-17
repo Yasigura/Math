@@ -8,7 +8,7 @@
 На данный момент поддерживаются мало функций.
 ```
 
-> Также хочу выразить благодарность [![@TonVitYT](https://github.com/TonVitYT.png?size=1)](https://github.com/TonVitYT) [@TonVitYT](https://github.com/TonVitYT) за участие в данном проекте.
+> Также хочу выразить благодарность <img src="https://github.com/TonVitYT.png?size=20" width="20" alt="@TonVitYT" style="vertical-align: middle"> [@TonVitYT](https://github.com/TonVitYT) за участие в данном проекте.
 
 
 ## 📥 Скачать miniMathSolver:
