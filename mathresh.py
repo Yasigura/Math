@@ -2,6 +2,7 @@ from colorama import init, Fore, Style
 init()
 
 print(f"{Fore.YELLOW}{Style.BRIGHT} Вас приветсвуте программа по решение математических задач. \n\n{Style.RESET_ALL}")
+
 def discriminat():
     a = float(input("Введите коэффициент a: "))
     if a == 0:
@@ -20,7 +21,7 @@ def discriminat():
         print("x =", x)
     elif discr < 0:
         print(f"{Fore.RED}{Style.BRIGHT}Корней нет.")
-    input(f"{Fore.Blue}{Style.BRIGHT}Нажмите Enter для завершения...{Style.RESET_ALL}")
+    input(f"{Fore.BLUE}{Style.BRIGHT}Нажмите Enter для завершения...{Style.RESET_ALL}")
 
 def linear_equation():
     a = float(input("Введите коэффициент a: "))
