@@ -16,3 +16,15 @@ elif discr == 0:
 elif discr < 0:
     print('Корней нет.')
 input ()
+ 
+
+
+
+
+
+
+
+
+
+
+ 
