@@ -1,4 +1,4 @@
-# MathSolver
+# Solving mathematical problems
 Простая программа на Python для решения математических задач.
 
 ## Описание
