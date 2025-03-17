@@ -1,9 +1,14 @@
 from colorama import init, Fore, Style
 import time
+import shutil
 
 init()
 
-print(f"{Fore.GREEN}{Style.BRIGHT}Вас приветствует программа по решению математических задач.{Style.RESET_ALL}")
+def print_centered(text):
+    terminal_width = shutil.get_terminal_size().columns
+    print(text.center(terminal_width))
+
+print_centered(f"{Fore.GREEN}{Style.BRIGHT}Вас приветствует программа по решению математических задач.{Style.RESET_ALL}")
 
 def discriminat():
     while True:
