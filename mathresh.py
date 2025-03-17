@@ -1,6 +1,7 @@
-print("Вас приветсвуте программа по решение матем. задач. \n\n", "1. Вычеслить дискриминат и корни.\n")
-choose = input("Выберите опцию: ")
+from colorama import init, Fore, Style
+init()
 
+print(f"{Fore.YELLOW}{Style.BRIGHT} Вас приветсвуте программа по решение математических задач. \n\n{Style.RESET_ALL}")
 def discriminat():
     a = float(input("Введите коэффициент a: "))
     if a == 0:
@@ -17,10 +18,32 @@ def discriminat():
     elif discr == 0:
         x = -b / (2 * a)
         print("x =", x)
-    else:  # discr < 0
-        print("Корней нет.")
+    elif discr < 0:
+        print(f"{Fore.RED}{Style.BRIGHT}Корней нет.")
+    input(f"{Fore.Blue}{Style.BRIGHT}Нажмите Enter для завершения...{Style.RESET_ALL}")
+
+def linear_equation():
+    a = float(input("Введите коэффициент a: "))
+    b = float(input("Введите коэффициент b: "))
+    if a == 0:
+        if b == 0:
+            print("Бесконечно много решений.")
+        else:
+            print("Решений нет.")
+    else:
+        x = -b / a
+        print("x =", x)
     input("Нажмите Enter для завершения...")
 
+def main():
+    print(f"\t{Fore.BLUE}{Style.BRIGHT}1. Вычеслить дискриминат и корни (ax² + bx + c = 0).\n",
+      f"\t2. Решить линейное уравнение (ax + b = 0.).\n")
+    choose = input(f"{Fore.YELLOW}Выберите опцию: ")
+    if choose == "1":
+        discriminat()
+    elif choose == "2":
+        linear_equation()
+    else:
+        print(f"{Fore.RED}Ввод был неверный, попробуйте снова.")
 
-if choose == "1":
-    discriminat()
+main()
