@@ -102,23 +102,9 @@ def factorial():
             for i in range(1, n + 1):
                 result *= i
             print(f"{Fore.GREEN}{Style.BRIGHT}{n}! = {result}{Style.RESET_ALL}")
-        input(f"{Fore.BLUE}{Style.BRIGHT}Нажмите Enter для продолжения...{Style.RESET_ALL}")
     except ValueError:
         print(f"{Fore.RED}{Style.BRIGHT}Ошибка: введите целое число.{Style.RESET_ALL}")
-        input(f"{Fore.BLUE}{Style.BRIGHT}Нажмите Enter для продолжения...{Style.RESET_ALL}")
-    try:
-        n = int(input(f"{Fore.YELLOW}{Style.BRIGHT}Введите неотрицательное целое число для вычисления факториала: {Style.RESET_ALL}"))
-        if n < 0:
-            print(f"{Fore.RED}{Style.BRIGHT}Ошибка: факториал определён только для неотрицательных чисел.{Style.RESET_ALL}")
-        else:
-            result = 1
-            for i in range(1, n + 1):
-                result *= i
-            print(f"{Fore.GREEN}{Style.BRIGHT}{n}! = {result}{Style.RESET_ALL}")
-        input(f"{Fore.BLUE}{Style.BRIGHT}Нажмите Enter для продолжения...{Style.RESET_ALL}")
-    except ValueError:
-        print(f"{Fore.RED}{Style.BRIGHT}Ошибка: введите целое число.{Style.RESET_ALL}")
-        input(f"{Fore.BLUE}{Style.BRIGHT}Нажмите Enter для продолжения...{Style.RESET_ALL}")
+    input(f"{Fore.BLUE}{Style.BRIGHT}Нажмите Enter для продолжения...{Style.RESET_ALL}")
 def main():
     while True:
         print(f"\n\n\t{Fore.BLUE}{Style.BRIGHT}0. Выйти из программы.\n"
