@@ -44,20 +44,19 @@ def viet():
         b = float(input(f"{Fore.YELLOW}{Style.BRIGHT}Введите коэффициент b: {Style.RESET_ALL}"))
         c = float(input(f"{Fore.YELLOW}{Style.BRIGHT}Введите коэффициент c: {Style.RESET_ALL}"))
         discr = b ** 2 - 4 * a * c
-        print(f"{Fore.MAGENTA}{Style.BRIGHT}Дискриминант = {discr}{Style.RESET_ALL}")
         if discr > 0:
             x1 = (-b - (discr) ** 0.5) / (2 * a)
             x2 = (-b + (discr) ** 0.5) / (2 * a)
-            print(f"{Fore.CYAN}{Style.BRIGHT}По теореме Виета (через дискриминант):")
+            print(f"{Fore.CYAN}{Style.BRIGHT}По теореме Виета:")
             print(f"\tКорень x1 = {x1}")
             print(f"\tКорень x2 = {x2}{Style.RESET_ALL}")
 
-            print(f"{Fore.MAGENTA}{Style.BRIGHT}Проверка: сумма корней = {-b/a}, произведение корней = {c/a}{Style.RESET_ALL}")
+            print(f"{Fore.MAGENTA}{Style.BRIGHT}Проверка:\n \tСумма корней = {-b/a},\n \tПроизведение корней = {c/a}{Style.RESET_ALL}")
         elif discr == 0:
             x = -b / (2 * a)
-            print(f"{Fore.CYAN}{Style.BRIGHT}По теореме Виета (через дискриминант):")
+            print(f"{Fore.CYAN}{Style.BRIGHT}По теореме Виета:")
             print(f"Корень x = {x}{Style.RESET_ALL}")
-            print(f"Проверка: сумма корней = {-b/a}, произведение корней = {c/a}{Style.RESET_ALL}")
+            print(f"Проверка:\n \tСумма корней = {-b/a},\n \tПроизведение корней = {c/a}{Style.RESET_ALL}")
         else:
             print(f"{Fore.RED}{Style.BRIGHT}Дискриминант отрицательный, реальных корней нет.{Style.RESET_ALL}")
         input(f"{Fore.BLUE}{Style.BRIGHT}Нажмите Enter для продолжения...{Style.RESET_ALL}")
