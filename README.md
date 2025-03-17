@@ -1,4 +1,4 @@
-# Solving mathematical problems
+# Math functions
 Простая программа на Python для решения математических задач.
 
 ## Описание
