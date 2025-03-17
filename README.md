@@ -11,3 +11,5 @@
 
 ## 📥 Скачать miniMathSolver:
 - **📦** → [miniMathSolver.exe](bin/miniMathSolver.exe)
+
+[![Аватар](https://github.com/friendusername.png?size=50)](https://github.com/friendusername)
