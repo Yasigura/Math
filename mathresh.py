@@ -3,7 +3,7 @@ import time
 
 init()
 
-print(f"{Fore.GREEN}{Style.BRIGHT}Вас приветствует программа по решению математических задач.\n\n{Style.RESET_ALL}")
+print(f"{Fore.GREEN}{Style.BRIGHT}Вас приветствует программа по решению математических задач.{Style.RESET_ALL}")
 
 def discriminat():
     while True:
