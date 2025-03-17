@@ -1,8 +1,3 @@
-#penis
-from tkinter import ttk
-from tkinter import *
-
-root = tkk()
 a = float (input('Введите коэфициент a:'))
 b = float (input('Введите коэфициент b:'))
 c = float (input('Введите коэфициент c:'))
@@ -21,6 +16,3 @@ elif discr == 0:
 elif discr < 0:
     print('Корней нет.')
 input ()
-
-
-root.mainloop()
