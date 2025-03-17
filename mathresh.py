@@ -1,11 +1,11 @@
+print("Вас приветсвуте программа по решение матем. задач. \n\n", "1. Вычеслить дискриминат и корни.\n")
+choose = input("Выберите опцию: ")
 
-
-def test():
+def discriminat():
     a = float(input("Введите коэффициент a: "))
     if a == 0:
         print("Ошибка: коэффициент a не может быть равен 0 (уравнение не будет квадратным).")
-        input("Нажмите Enter для завершения...")
-        return
+        discriminat()
     b = float(input("Введите коэффициент b: "))
     c = float(input("Введите коэффициент c: "))
     discr = b ** 2 - 4 * a * c
@@ -22,5 +22,5 @@ def test():
     input("Нажмите Enter для завершения...")
 
 
-if __name__ == "__main__":
-    test()
+if choose == "1":
+    discriminat()
